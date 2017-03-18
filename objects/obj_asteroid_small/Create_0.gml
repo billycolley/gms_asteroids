@@ -25,3 +25,19 @@
 sprite_index = spr_asteroid_small;
 image_index = random_range(1,3);
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 4FEB61F8
+/// @DnDArgument : "expr" "300"
+/// @DnDArgument : "var" "worth"
+worth = 300;
+
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 5B2B0DE6
+/// @DnDArgument : "expr" ""none""
+/// @DnDArgument : "var" "child_asteroid"
+child_asteroid = "none";
+
+

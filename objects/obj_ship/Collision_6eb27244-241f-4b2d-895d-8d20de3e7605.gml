@@ -43,6 +43,16 @@ if(l6049D9B3_0)
 						global.player_lives += -1;
 						
 			
+						/// @DnDAction : YoYo Games.Common.Variable
+						/// @DnDVersion : 1
+						/// @DnDHash : 61B43E24
+						/// @DnDParent : 518E9154
+						/// @DnDArgument : "expr" "-400"
+						/// @DnDArgument : "expr_relative" "1"
+						/// @DnDArgument : "var" "global.score"
+						global.score += -400;
+						
+			
 						/// @DnDAction : YoYo Games.Instances.Set_Alarm
 						/// @DnDVersion : 1
 						/// @DnDHash : 69EA9D22

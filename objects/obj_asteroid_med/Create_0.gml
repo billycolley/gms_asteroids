@@ -1,3 +1,19 @@
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 059FA601
+/// @DnDArgument : "expr" "obj_asteroid_small"
+/// @DnDArgument : "var" "child_asteroid"
+child_asteroid = obj_asteroid_small;
+
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 3D9FA72B
+/// @DnDArgument : "expr" "200"
+/// @DnDArgument : "var" "worth"
+worth = 200;
+
+
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 11414333

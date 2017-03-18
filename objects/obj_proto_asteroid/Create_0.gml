@@ -23,6 +23,13 @@ exploding = 0;
 	speed = 1;
 }
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 32270B3A
+/// @DnDArgument : "var" "worth"
+worth = 0;
+
+
 /// @DnDAction : YoYo Games.Movement.Set_Direction_Random
 /// @DnDVersion : 1.1
 /// @DnDHash : 33B1CAB9
@@ -46,5 +53,13 @@ spin_direction = random_range(-1, 1);
 /// @DnDArgument : "expr" "random_range(1, 3)"
 /// @DnDArgument : "var" "spin_speed"
 spin_speed = random_range(1, 3);
+
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 629AC6E4
+/// @DnDArgument : "expr" ""none""
+/// @DnDArgument : "var" "child_asteroid"
+child_asteroid = "none";
 
 
