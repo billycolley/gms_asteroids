@@ -91,3 +91,32 @@ tripleshot = 0;
 damaged = 0;
 
 
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 7FB1E4DE
+/// @DnDArgument : "var" "global.player_lives"
+/// @DnDArgument : "op" "3"
+if(global.player_lives <= 0)
+{
+	
+
+	/// @DnDAction : YoYo Games.Common.Set_Global
+	/// @DnDVersion : 1
+	/// @DnDHash : 28EBDA04
+	/// @DnDParent : 7FB1E4DE
+	/// @DnDArgument : "value" "3"
+	/// @DnDArgument : "var" "player_lives"
+	global.player_lives = 3;
+	
+
+	/// @DnDAction : YoYo Games.Common.Set_Global
+	/// @DnDVersion : 1
+	/// @DnDHash : 2A188118
+	/// @DnDParent : 7FB1E4DE
+	/// @DnDArgument : "var" "score"
+	global.score = 0;
+	
+
+
+}
+

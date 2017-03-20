@@ -82,12 +82,12 @@ if(message == "level")
 	/// @DnDArgument : "y" "8"
 	/// @DnDArgument : "y_relative" "1"
 	/// @DnDArgument : "caption" ""Level ""
-	/// @DnDArgument : "var" "1"
+	/// @DnDArgument : "var" "global.level"
 	
 	{
 		var l5FD2591B_0 = x + 0;
 		var l5FD2591B_1 = y + 8;
-		draw_text(l5FD2591B_0, l5FD2591B_1, string("Level ") + string(1));
+		draw_text(l5FD2591B_0, l5FD2591B_1, string("Level ") + string(global.level));
 	}
 
 

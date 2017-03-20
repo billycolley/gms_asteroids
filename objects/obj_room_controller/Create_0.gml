@@ -43,14 +43,6 @@ instance_create_layer(random(room_width), random(room_height), "Instances", obj_
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
-/// @DnDHash : 78BCA0B1
-/// @DnDArgument : "value" "3"
-/// @DnDArgument : "var" "player_lives"
-global.player_lives = 3;
-
-
-/// @DnDAction : YoYo Games.Common.Set_Global
-/// @DnDVersion : 1
 /// @DnDHash : 7CA58442
 /// @DnDArgument : "var" "pause"
 global.pause = 0;

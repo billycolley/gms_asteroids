@@ -72,3 +72,26 @@ for(var i = 0; i <= 5; i++){
 }
 }
 
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 0394B4CB
+/// @DnDArgument : "value" "3"
+/// @DnDArgument : "var" "player_lives"
+global.player_lives = 3;
+
+
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 1D90E724
+/// @DnDArgument : "var" "score"
+global.score = 0;
+
+
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 7CC3004F
+/// @DnDArgument : "value" "1"
+/// @DnDArgument : "var" "level"
+global.level = 1;
+
+
