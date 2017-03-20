@@ -9,9 +9,9 @@ child_asteroid = obj_asteroid_small;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 3D9FA72B
-/// @DnDArgument : "expr" "200"
+/// @DnDArgument : "expr" "200 * global.level"
 /// @DnDArgument : "var" "worth"
-worth = 200;
+worth = 200 * global.level;
 
 
 /// @DnDAction : YoYo Games.Common.Execute_Code

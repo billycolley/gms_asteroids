@@ -28,9 +28,9 @@ image_index = random_range(1,3);
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 4FEB61F8
-/// @DnDArgument : "expr" "300"
+/// @DnDArgument : "expr" "300 * global.level"
 /// @DnDArgument : "var" "worth"
-worth = 300;
+worth = 300 * global.level;
 
 
 /// @DnDAction : YoYo Games.Common.Variable

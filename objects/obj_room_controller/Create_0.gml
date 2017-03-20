@@ -5,41 +5,26 @@
 room_started = 0;
 
 
-/// @DnDAction : YoYo Games.Instances.Create_Instance
+/// @DnDAction : YoYo Games.Loops.For_Loop
 /// @DnDVersion : 1
-/// @DnDHash : 17773107
-/// @DnDArgument : "xpos" "random(room_width)"
-/// @DnDArgument : "ypos" "random(room_height)"
-/// @DnDArgument : "objectid" "obj_asteroid_large"
-/// @DnDSaveInfo : "objectid" "fdbb1a5b-82fc-4403-bb86-61eb438d9878"
-instance_create_layer(random(room_width), random(room_height), "Instances", obj_asteroid_large); 
+/// @DnDHash : 39278FE0
+/// @DnDArgument : "init_temp" "1"
+/// @DnDArgument : "cond" "i < 4"
+for(var i = 0; i < 4; i += 1) {
+	
 
-/// @DnDAction : YoYo Games.Instances.Create_Instance
-/// @DnDVersion : 1
-/// @DnDHash : 6C93A5EF
-/// @DnDArgument : "xpos" "random(room_width)"
-/// @DnDArgument : "ypos" "random(room_height)"
-/// @DnDArgument : "objectid" "obj_asteroid_large"
-/// @DnDSaveInfo : "objectid" "fdbb1a5b-82fc-4403-bb86-61eb438d9878"
-instance_create_layer(random(room_width), random(room_height), "Instances", obj_asteroid_large); 
+	/// @DnDAction : YoYo Games.Instances.Create_Instance
+	/// @DnDVersion : 1
+	/// @DnDHash : 17773107
+	/// @DnDParent : 39278FE0
+	/// @DnDArgument : "xpos" "random(room_width)"
+	/// @DnDArgument : "ypos" "random(room_height)"
+	/// @DnDArgument : "objectid" "obj_asteroid_large"
+	/// @DnDSaveInfo : "objectid" "fdbb1a5b-82fc-4403-bb86-61eb438d9878"
+	instance_create_layer(random(room_width), random(room_height), "Instances", obj_asteroid_large); 
 
-/// @DnDAction : YoYo Games.Instances.Create_Instance
-/// @DnDVersion : 1
-/// @DnDHash : 1C99D92C
-/// @DnDArgument : "xpos" "random(room_width)"
-/// @DnDArgument : "ypos" "random(room_height)"
-/// @DnDArgument : "objectid" "obj_asteroid_large"
-/// @DnDSaveInfo : "objectid" "fdbb1a5b-82fc-4403-bb86-61eb438d9878"
-instance_create_layer(random(room_width), random(room_height), "Instances", obj_asteroid_large); 
 
-/// @DnDAction : YoYo Games.Instances.Create_Instance
-/// @DnDVersion : 1
-/// @DnDHash : 5756A623
-/// @DnDArgument : "xpos" "random(room_width)"
-/// @DnDArgument : "ypos" "random(room_height)"
-/// @DnDArgument : "objectid" "obj_asteroid_large"
-/// @DnDSaveInfo : "objectid" "fdbb1a5b-82fc-4403-bb86-61eb438d9878"
-instance_create_layer(random(room_width), random(room_height), "Instances", obj_asteroid_large); 
+}
 
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1

@@ -18,9 +18,9 @@ child_asteroid = obj_asteroid_med;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 21CB5219
-/// @DnDArgument : "expr" "100"
+/// @DnDArgument : "expr" "100 * global.level"
 /// @DnDArgument : "var" "worth"
-worth = 100;
+worth = 100 * global.level;
 
 
 /// @DnDAction : YoYo Games.Instances.Set_Sprite

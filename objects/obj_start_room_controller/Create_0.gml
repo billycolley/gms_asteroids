@@ -1,3 +1,11 @@
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 7CC3004F
+/// @DnDArgument : "value" "1"
+/// @DnDArgument : "var" "level"
+global.level = 1;
+
+
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 0F151D45
@@ -85,13 +93,5 @@ global.player_lives = 3;
 /// @DnDHash : 1D90E724
 /// @DnDArgument : "var" "score"
 global.score = 0;
-
-
-/// @DnDAction : YoYo Games.Common.Set_Global
-/// @DnDVersion : 1
-/// @DnDHash : 7CC3004F
-/// @DnDArgument : "value" "1"
-/// @DnDArgument : "var" "level"
-global.level = 1;
 
 
