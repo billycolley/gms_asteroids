@@ -8,7 +8,7 @@ if(global.pause == 0)
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
-	/// @DnDHash : 44F4A41D
+	/// @DnDHash : 75B2CCD1
 	/// @DnDParent : 409E81D6
 	/// @DnDArgument : "var" "tripleshot"
 	/// @DnDArgument : "value" "1"
@@ -16,39 +16,24 @@ if(global.pause == 0)
 	{
 		
 	
-			/// @DnDAction : YoYo Games.Common.Execute_Code
+			/// @DnDAction : YoYo Games.Common.If_Variable
 			/// @DnDVersion : 1
-			/// @DnDHash : 2F83AC6F
-			/// @DnDParent : 44F4A41D
-			/// @DnDArgument : "code" "if(bullet_cooldown != 0 && live_bullets <= max_bullets){$(13_10)	var bullet = instance_create_layer(x + lengthdir_x(7, image_angle) + hspeed, y + lengthdir_y(7, image_angle) + vspeed, "Instances", obj_bullet)$(13_10)	with(bullet){$(13_10)		bullet.speed = 15;$(13_10)		bullet.direction = other.image_angle;$(13_10)		other.bullet_cooldown -= 1;$(13_10)		other.live_bullets += 1;$(13_10)		other.alarm[0] = 6;$(13_10)	} $(13_10)	var bullet2 = instance_create_layer(x + lengthdir_x(7, image_angle) + hspeed, y + lengthdir_y(7, image_angle) + vspeed, "Instances", obj_bullet)$(13_10)	with(bullet2){$(13_10)		bullet2.speed = 15;$(13_10)		bullet2.direction = other.image_angle + 5;$(13_10)		other.bullet_cooldown -= 1;$(13_10)		other.live_bullets += 1;$(13_10)		other.alarm[0] = 6;$(13_10)	} $(13_10)	var bullet3 = instance_create_layer(x + lengthdir_x(7, image_angle) + hspeed, y + lengthdir_y(7, image_angle) + vspeed, "Instances", obj_bullet)$(13_10)	with(bullet3){$(13_10)		bullet3.speed = 15;$(13_10)		bullet3.direction = other.image_angle - 5;$(13_10)		other.bullet_cooldown -= 1;$(13_10)		other.live_bullets += 1;$(13_10)		other.alarm[0] = 6;$(13_10)	} $(13_10)}"
-			
+			/// @DnDHash : 30F0B9E7
+			/// @DnDParent : 75B2CCD1
+			/// @DnDArgument : "var" "live_bullets"
+			if(live_bullets == 0)
 			{
-				if(bullet_cooldown != 0 && live_bullets <= max_bullets){
-				var bullet = instance_create_layer(x + lengthdir_x(7, image_angle) + hspeed, y + lengthdir_y(7, image_angle) + vspeed, "Instances", obj_bullet)
-				with(bullet){
-					bullet.speed = 15;
-					bullet.direction = other.image_angle;
-					other.bullet_cooldown -= 1;
-					other.live_bullets += 1;
-					other.alarm[0] = 6;
-				} 
-				var bullet2 = instance_create_layer(x + lengthdir_x(7, image_angle) + hspeed, y + lengthdir_y(7, image_angle) + vspeed, "Instances", obj_bullet)
-				with(bullet2){
-					bullet2.speed = 15;
-					bullet2.direction = other.image_angle + 5;
-					other.bullet_cooldown -= 1;
-					other.live_bullets += 1;
-					other.alarm[0] = 6;
-				} 
-				var bullet3 = instance_create_layer(x + lengthdir_x(7, image_angle) + hspeed, y + lengthdir_y(7, image_angle) + vspeed, "Instances", obj_bullet)
-				with(bullet3){
-					bullet3.speed = 15;
-					bullet3.direction = other.image_angle - 5;
-					other.bullet_cooldown -= 1;
-					other.live_bullets += 1;
-					other.alarm[0] = 6;
-				} 
-			}
+				
+			
+						/// @DnDAction : YoYo Games.Common.Execute_Script
+						/// @DnDVersion : 1.1
+						/// @DnDHash : 6D7E55CA
+						/// @DnDParent : 30F0B9E7
+						/// @DnDArgument : "script" "tripleshot_script"
+						/// @DnDSaveInfo : "script" "b52141c2-6ebf-4495-96e5-57ca6ec1af24"
+						script_execute(tripleshot_script);
+			
+			
 			}
 	
 	
@@ -56,30 +41,20 @@ if(global.pause == 0)
 
 	/// @DnDAction : YoYo Games.Common.Else
 	/// @DnDVersion : 1
-	/// @DnDHash : 7A98CDDD
+	/// @DnDHash : 7C92C585
 	/// @DnDParent : 409E81D6
 	else
 	{
 		
 	
-			/// @DnDAction : YoYo Games.Common.Execute_Code
-			/// @DnDVersion : 1
-			/// @DnDHash : 3B9580E3
-			/// @DnDParent : 7A98CDDD
-			/// @DnDArgument : "code" "if(bullet_cooldown != 0 && live_bullets <= max_bullets){$(13_10)	var bullet = instance_create_layer(x + lengthdir_x(7, image_angle) + hspeed, y + lengthdir_y(7, image_angle) + vspeed, "Instances", obj_bullet)$(13_10)	with(bullet){$(13_10)		bullet.direction = other.image_angle;$(13_10)		bullet.speed = 15;$(13_10)		other.bullet_cooldown -= 1;$(13_10)		other.live_bullets += 1;$(13_10)		other.alarm[0] = 6;$(13_10)	}$(13_10)}"
-			
-			{
-				if(bullet_cooldown != 0 && live_bullets <= max_bullets){
-				var bullet = instance_create_layer(x + lengthdir_x(7, image_angle) + hspeed, y + lengthdir_y(7, image_angle) + vspeed, "Instances", obj_bullet)
-				with(bullet){
-					bullet.direction = other.image_angle;
-					bullet.speed = 15;
-					other.bullet_cooldown -= 1;
-					other.live_bullets += 1;
-					other.alarm[0] = 6;
-				}
-			}
-			}
+			/// @DnDAction : YoYo Games.Common.Execute_Script
+			/// @DnDVersion : 1.1
+			/// @DnDHash : 6B193292
+			/// @DnDParent : 7C92C585
+			/// @DnDArgument : "script" "fire_bullets_script"
+			/// @DnDArgument : "arg" "image_angle, false"
+			/// @DnDSaveInfo : "script" "e422c452-06c9-47a4-a601-42c6fc2a8129"
+			script_execute(fire_bullets_script, image_angle, false);
 	
 	
 	}

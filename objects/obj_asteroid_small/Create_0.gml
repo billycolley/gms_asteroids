@@ -1,43 +1,15 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 7826B918
-/// @DnDArgument : "code" "event_inherited()"
+/// @DnDArgument : "code" "event_inherited();$(13_10)speed = 3;$(13_10)worth = 300 * global.level;$(13_10)child_asteroid = "none";$(13_10)large_object = false;$(13_10)object_set_sprite(self, spr_asteroid_small);$(13_10)image_index = random_range(1,3);"
 
 {
-	event_inherited()
-}
-
-/// @DnDAction : YoYo Games.Movement.Set_Speed
-/// @DnDVersion : 1
-/// @DnDHash : 128F3711
-/// @DnDArgument : "speed" "3"
-
-{
-	speed = 3;
-}
-
-/// @DnDAction : YoYo Games.Instances.Set_Sprite
-/// @DnDVersion : 1
-/// @DnDHash : 13ACA73D
-/// @DnDArgument : "imageind" "random_range(1,3)"
-/// @DnDArgument : "spriteind" "spr_asteroid_small"
-/// @DnDSaveInfo : "spriteind" "ce0ed17b-027e-47f5-afe3-61d6f1f48a77"
-sprite_index = spr_asteroid_small;
-image_index = random_range(1,3);
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 4FEB61F8
-/// @DnDArgument : "expr" "300 * global.level"
-/// @DnDArgument : "var" "worth"
+	event_inherited();
+speed = 3;
 worth = 300 * global.level;
-
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 5B2B0DE6
-/// @DnDArgument : "expr" ""none""
-/// @DnDArgument : "var" "child_asteroid"
 child_asteroid = "none";
-
+large_object = false;
+object_set_sprite(self, spr_asteroid_small);
+image_index = random_range(1,3);
+}
 

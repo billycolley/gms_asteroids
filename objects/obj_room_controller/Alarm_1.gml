@@ -20,19 +20,3 @@ if(global.player_lives > 0)
 
 }
 
-/// @DnDAction : YoYo Games.Common.Else
-/// @DnDVersion : 1
-/// @DnDHash : 6F24573F
-else
-{
-	
-
-	/// @DnDAction : YoYo Games.Rooms.Restart_Room
-	/// @DnDVersion : 1
-	/// @DnDHash : 089DE372
-	/// @DnDParent : 6F24573F
-	room_restart();
-
-
-}
-

@@ -1,22 +1,13 @@
-/// @DnDAction : YoYo Games.Instances.Set_Sprite
-/// @DnDVersion : 1
-/// @DnDHash : 30E7F9E0
-/// @DnDArgument : "spriteind" "spr_ship"
-/// @DnDSaveInfo : "spriteind" "711fcb21-41bb-4e92-aef5-f6f0d3f71476"
-sprite_index = spr_ship;
-image_index = 0;
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 6AE2731C
-/// @DnDArgument : "var" "image_speed"
-image_speed = 0;
-
-
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 562D7C1F
 /// @DnDArgument : "var" "reversing"
 reversing = 0;
 
+
+/// @DnDAction : YoYo Games.Instances.Destroy_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 7609238A
+/// @DnDApplyTo : 0b04889f-cb86-4ad3-a7c4-08ea36d6b79e
+with(ship_back_thrust_object) instance_destroy();
 

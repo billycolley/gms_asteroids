@@ -10,9 +10,9 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 1820B0FA
-/// @DnDArgument : "expr" "50"
+/// @DnDArgument : "expr" "30"
 /// @DnDArgument : "var" "lifespan"
-lifespan = 50;
+lifespan = 30;
 
 
 /// @DnDAction : YoYo Games.Common.Variable
@@ -28,5 +28,13 @@ firing = 1;
 /// @DnDHash : 3897BE81
 /// @DnDArgument : "steps" "20"
 alarm_set(0, 20);
+
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 29FA8377
+/// @DnDArgument : "expr" "false"
+/// @DnDArgument : "var" "object_large"
+object_large = false;
 
 
