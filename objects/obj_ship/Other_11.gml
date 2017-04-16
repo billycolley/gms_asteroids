@@ -14,11 +14,11 @@ invulnerable = 1;
 alarm_set(3, 60);
 
 
-/// @DnDAction : YoYo Games.Instances.Set_Alarm
-/// @DnDVersion : 1
-/// @DnDHash : 29BD58F7
-/// @DnDArgument : "steps" "1"
-/// @DnDArgument : "alarm" "1"
-alarm_set(1, 1);
-
+/// @DnDAction : YoYo Games.Common.Execute_Script
+/// @DnDVersion : 1.1
+/// @DnDHash : 36FF373C
+/// @DnDArgument : "script" "sprite_flash_script"
+/// @DnDArgument : "arg" "60"
+/// @DnDSaveInfo : "script" "d8475c0a-92c9-43c5-86a5-e7a75ea0059d"
+script_execute(sprite_flash_script, 60);
 
